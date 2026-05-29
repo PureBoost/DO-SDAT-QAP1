@@ -37,3 +37,24 @@ The project includes 10 JUnit tests. Run tests with:
 ```bash
 mvn test
 ```
+
+## Clean Code Examples
+
+Here are three examples from this project showing clean code practices:
+
+- **Single Responsibility:** `Event` encapsulates event data and attendee management in one place. See [src/main/java/com/keyin/Event.java](src/main/java/com/keyin/Event.java) for the implementation.
+
+- **Meaningful Names:** Methods like `addAttendee()` and `removeAttendee()` clearly express intent; class names `Event`, `Attendee`, and `EventService` are domain-focused. See [src/main/java/com/keyin/EventService.java](src/main/java/com/keyin/EventService.java).
+
+- **Small, testable methods / explicit return values:** `addAttendee()` returns a `boolean` to indicate success/failure rather than throwing for expected business conditions, making behavior easier to test. See [src/main/java/com/keyin/Event.java](src/main/java/com/keyin/Event.java).
+
+## GitHub Actions
+
+- Added after inital commit
+- https://github.com/pureboost/DO-SDAT-QAP1/actions/workflows/maven.yml
+
+
+## Branching & PR Evidence
+
+- **PR:** ![PR screenshot](screenshots/pr.png)
+- **BRANCH:** ![Branch screenshot](screenshots/branch.png)
